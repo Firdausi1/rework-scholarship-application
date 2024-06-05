@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  /* height: 100vh; */
+  background-color: #e9edf0;
+  padding: 20px;
+}
+input,
+select {
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+}
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+input,
+label {
+  display: block;
+}
+button {
+  border: none;
+  border-radius: 10px;
+  background-color: teal;
+  color: #fff;
+  padding: 10px 20px;
+  width: 50%;
+}
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+h3,
+h4 {
+  font-weight: 600;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+}
+.tab-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.tab {
+  height: 5px;
+  background-color: grey;
+  border-radius: 5px;
+}
+.active {
+  background-color: teal;
+}
+.step-item {
+  color: grey;
+  font-size: 12px;
+}
+.active-step {
+  color: teal;
+}
+.stepIcon {
+  color: gray;
+  margin-right: 5px;
+}
+#complete1,
+#complete2,
+#complete3 {
+  display: none;
+}
+.completed {
+  color: teal;
+}
+.input {
+  margin-bottom: 15px;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.errorField {
+  color: red;
+  margin-top: 5px;
+  display: none;
+  font-size: 12px;
+}
+#gradeForm {
+  display: none;
+}
+.gridInput {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.compulsory {
+  border: none;
+}
+.addBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+#gradeBtn {
+  display: none;
+}
+.errorGrade {
+  display: inline-block;
+  color: red;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.review {
+  display: none;
+}
+.review .top,
+.review .bottom-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.title {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.text {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+h3:nth-of-type(2) {
+  margin: 30px 0 10px 0;
+}
+.bottom,
+.top {
+  margin-top: 10px;
+}
+.bottom-card {
+  margin-bottom: 10px;
+}
+.subject {
+  text-transform: capitalize;
+}
+#submitBtn {
+  margin-top: 30px;
+}
+.back {
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.back-icon {
+  margin-right: 10px;
+}
+#rightContainer {
+  display: none;
+  flex-direction: column;
+  margin-top: 50px;
+  align-items: center;
+}
+.result {
+  background-color: #fff;
+  width: 80%;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.disabled {
+  background-color: rgba(0, 128, 128, 0.67);
+  color: rgba(255, 255, 255, 0.823);
+}
+
+@media screen and (max-width: 1024px) {
+  .leftContainer {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #container {
+    gap: 20px;
+  }
+  .leftContainer {
+    width: 100%;
+  }
+  .result {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  label {
+    font-size: 12px;
+  }
+  .back {
+    font-size: 12px;
+  }
+  .title {
+    font-size: 12px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .bottom p {
+    font-size: 14px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #rightContainer {
+    margin-top: 0px;
+  }
+}
