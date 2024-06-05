@@ -167,9 +167,6 @@ h3:nth-of-type(2) {
 .subject {
   text-transform: capitalize;
 }
-#submitBtn {
-  margin-top: 30px;
-}
 .back {
   display: inline-block;
   cursor: pointer;

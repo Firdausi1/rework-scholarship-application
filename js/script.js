@@ -40,8 +40,8 @@ const view = {
   displayCountries: function () {
     let container = document.getElementById("country");
     let inner = countries
-      .map((item) => {
-        return `<option>${item}</option>`;
+      .map((item, index) => {
+        return `<option key=${index}>${item}</option>`;
       })
       .join("");
     container.innerHTML += inner;
@@ -333,7 +333,7 @@ const controller = {
     model.appContainer.className = "container";
     model.rightContainer.style.display = "flex";
     model.reviewBack.style.display = "none";
-    model.application.style.width = "80%";
+    model.application.style.width = "100%";
     model.complete3.style.display = "inline-block";
     model.complete3.classList.add("completed");
     const applicant = JSON.parse(localStorage.getItem("applicant"));
