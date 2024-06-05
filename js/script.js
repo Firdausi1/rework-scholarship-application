@@ -4,7 +4,7 @@ import {
   AsianCountries,
   SouthAmericanCountries,
   NorthAmericanCountries,
-} from "./js/data.js";
+} from "./data.js";
 
 const model = {
   firstTab: document.getElementById("firstTab"),
